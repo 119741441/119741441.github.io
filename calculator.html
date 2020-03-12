@@ -8,9 +8,7 @@
 	<header>
 		
 		<div class="row">
-			<div class="logo">
-				<img src="logo.png">
-			</div>
+			
 			<ul class="main-nav">
 				<li class="active"><a href="index.html"> Home </a> </li>
 				<li><a href="cv.html"> CV </a> </li>
@@ -20,154 +18,160 @@
 
 			</ul>	
 </div>
-<html>
-	<head>
-<title>Consultancy calculator. </title>
-		<style>
-			body,h1 {
-				font-family:arial;
-				font-size:18px;
-				}
-			
-			label{
-				width: 7em;
-				float: left;
-				text-align: right;
-				margin-right: 0.8em;
-				display: block
-				}
+html lang="en" xmlns="http.//www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ebusiness 1</title>
+        <!--<link rel="stylesheet" href="style.css" type="text/css" /> -->
+
+<title>CSS Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    </head>
+       
+            <style>
+         body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: powderblue;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: powderblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: powderblue;
+  color: white;
+}
  
-			h1 {
-				font-family:arial;
-				padding-left: 37px;
-			}
-		.message {
-				color: blue;
-				font-family:arial;
-				font-size:18px;
-				font-weight:bolder;
-				padding-left: 38px;
-}
-			.warning {
-				color: red;
-				font-family:arial;
-				font-size:18px;
-			font-weight:bolder;
-				padding-left: 38px;
-	}
-	 </style>	
-	 <script>
-function solve() {
- var math_opt = document.getElementsByName("math");
-				 var no_one = document.getElementById("no1").value;
-				var no_two = document.getElementById("no2").value;
-				 
-				if (no_one=="") {
-				
-				var msg = "<span class='warning'>Give the first value.</span>";
-document.getElementById('msg').innerHTML = msg;
-					return false;
-				} 
-			 else if (no_two=="") {
-				 var msg = "<span class='warning'>Give the second value.</span>";
-document.getElementById('msg').innerHTML = msg;
-					return false;
-				}
-				 
-if (math_opt[0].checked == true) {
-				 
-				sum = parseInt(no_one) + parseInt(no_two);
-							
-results = "<span class='message'> The sum of " + no_one 
-					+ " and " + no_two + " is " + sum +".</span>";
-					document.getElementById('msg').innerHTML = results;
-					return false;
-} else if (math_opt[1].checked == true) {
- diff = parseInt(no_one) - parseInt(no_two);
-					
-results = "<span class='message'> The difference between " 
-					+ no_one + " and " + no_two + " is " + diff +".</span>";
-				document.getElementById('msg').innerHTML = results;
-					return false;
-} else if (math_opt[2].checked == true) {
- product = parseInt(no_one) *parseInt(no_two);
-					
-results = "<span class='message'>The product between " 
-					+ no_one + " and " + no_two + " is " + product +".</span>";
-				document.getElementById('msg').innerHTML = results;
-					return false;
-} else if (math_opt[3].checked == true) {
- quotient = parseInt(no_one) / parseInt(no_two);
-					
-results = "<span class='message'>The quotient between " 
-				+ no_one + " and " + no_two + " is " + quotient +". </span>";
-				document.getElementById('msg').innerHTML = results;
-					return false;
-} 
-								
-				else {
-var msg = "<span class='warning'>You must select your math operator.</span>";
-document.getElementById('msg').innerHTML = msg;
-return false;
-}
-				
-				return true;
-}
-function reset_msg() {
-document.getElementById('msg').innerHTML = '';
-	 }
-			 
-			 function clear()
-			 {
-			document.getElementById('msg').innerHTML = "";
-			no_one="";
-			no_two="";
-			no_one.focus();
-			 }
-</script>
-</head>
+            </style>
 <body>
-	<br>
-	<h1> Basic Calculator Using Radio Button </h1>
-		<br>
-<form action="" method="POST">
-		 <label for="first_value">
-		 First Value
-		 
-		 </label>
-		 <input type="text" name="no_one" id="no1" size="5" autofocus>
-		 <br><br>
-		 <label for="second_value">
-		Second Value
-		</label>
-		<input type="text" name="no_2" id="no2" size="5">
-	 <br><br>
-<label>Operators</label><br>
-			<br> <label for="radio1">
-			      
-<input type="radio" name="math" onclick="reset_msg();" />Addition
-      
-			</label>
-<input type="radio" name="math" onclick="reset_msg();" />Subtraction
-	      
-<input type="radio" name="math" onclick="reset_msg();" />Multiplication
-      
- <input type="radio" name="math" onclick="reset_msg();" />Division
-      
-			 <br><br>
-			           
-			<input type="submit" value="Compute" onclick="return solve();" />
-		        
-			<input type="submit" value="Clear" onclick="return clear();" />
-			<br><br>
-<div id="msg"></div>
- </form>
-</body>
 
+ 
+        <center>
+        <div class="form">
+            <form name="intCalc" method="post" action="eBus2.php">
+            
+        <center>
+            <table cellspacing="20">
+                <tr>
+                    <td><b>Package</b></td>
+                </tr>
+                <tr>
+                    <td>Hyperautomation @ $200</td>
+                    <td><input type="radio" id="Hyperautomation" name="rdoGroup" value="200"  required /></td>
+                </tr>
+                <tr>
+                    <td>Multiexperience @ $500</td>
+                    <td><input type="radio" id="Multiexperience" name="rdoGroup" value="500"  /></td>
+                </tr>
+                <tr>
+                    <td>Distributed Cloud @ $1000</td>
+                    <td><input type="radio" id="DistributedCloud" name="rdoGroup" value="1000" /></td>
+                </tr>
+            </table>
+        </center>
+        <br/>
+            <center>
+                 <table cellspacing="10">
+            <tr>
+                    <td><b></b></td>
+                    <td><b>Amount</b></td>
+            </tr>
+                <tr>
+                    <td>Sub Total</td>
+                    <td><input type="text" id="txtSubTot" name="txtSub" readonly  required/></td>
+                </tr>
+                <tr>
+                    <td>Discount @ 5%</td>
+                    <td><input type="text" id="txtDisc" name="txtDisc" readonly  required/></td>
+                </tr>
+                <tr>
+                    <td>+ VAT @ 20%</td>
+                    <td><input type="text" id="txtVAT" name="txtVAT" readonly required /></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly required/></td>
+                </tr>
+            </table>
+        </center>
+       
+        <br />
+            <center>
+            <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
+            <input type="reset" name="btnClear" id="btnClear" value="Clear"/>
+           
+           
+        </center>
+            </form>
+        </div>
+        </center>
+            <script type="text/javascript">
+              function calcSub(){
+                    var argSelection = parseFloat(document.getElementById('txtSubTot').value);
+                    var Hyperautomation = parseFloat(document.getElementById('Hyperautomation').value);
+                    var Multiexperience = parseFloat(document.getElementById('Multiexperience').value);
+                    var DistributedCloud = parseFloat(document.getElementById('DistributedCloud').value);
+                   
+                   
+                    if (document.getElementById('Hyperautomation').checked) {
+                        document.intCalc.txtSubTot.value = Hyperautomation;
+                        argSelection = Hyperautomation;
+                        calcVatTotal(argSelection);
+                       
+                    }
+                   else if (document.getElementById('Multiexperience').checked) {
+                        document.intCalc.txtSubTot.value = Multiexperience;
+                        argSelection = Multiexperience;
+                        calcVatTotal(argSelection);
+                       
+                    }
+                    else if (document.getElementById('DistributedCloud').checked) {
+                        document.intCalc.txtSubTot.value = DistributedCloud;
+                        argSelection = DistributedCloud;
+                        calcVatTotal(argSelection);
+                    }
+                }
+               
+               
+                function calcVatTotal(parmSelection) {
+                    var argsubTotal = parseFloat(parmSelection);
+                    var argdiscountAmt = parseFloat(argsubTotal * .05);
+                    var argvatAmt = parseFloat(argsubTotal * .20);    
+                    var argtotalPrice = parseFloat(argsubTotal - argdiscountAmt + argvatAmt);
+                   calcDisp(argsubTotal, argdiscountAmt,argvatAmt,argtotalPrice);
+                   
+                 
+                }
 
-	</header>
-	
+function calcDisp(parmsubTotal, parmdiscountAmt, parmvatAmt, parmtotalPrice){
+document.intCalc.txtSubTot.value = parmsubTotal;
+document.intCalc.txtDisc.value = parmdiscountAmt;
+                    document.intCalc.txtVAT.value = parmvatAmt;
+                    document.intCalc.txtTotal.value = parmtotalPrice;
+}
+               
+               
+            </script>
 
-
-	</body>
+    </body>
+    
 </html>
